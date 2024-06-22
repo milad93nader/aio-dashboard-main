@@ -11,6 +11,7 @@ const UserIcon = ({
                 src={`/user-pic.jpeg`}
                 width={'40'}
                 height={'40'}
+                alt="descrption of the image"
             />
         </div>
     );

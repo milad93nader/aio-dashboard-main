@@ -1,7 +1,4 @@
-import { useRef } from "react";
-import {
-  IoNotificationsOutline,
-} from "react-icons/io5";
+import {IoNotificationsOutline,} from "react-icons/io5";
 import DropdownMenu from "../DropdownMenu";
 import IconWrapper from "../IconWrapper";
 import UserIcon from "../UserIcon";
@@ -9,6 +6,7 @@ import styles from "./Header.module.css";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import Link from "next/link";
 import { headerLoginMenuList, menuList } from "../../data";
+import Image from 'next/image';
 
 /*
 
@@ -53,7 +51,7 @@ const NotificationsIcon = ({ onClick = () => {} }) => (
 const NotificationList = ({ img = null, desc = "", datetime = "" }) => {
   return (
     <li>
-      {img && <img src={img} alt="" />}
+      {img && <Image src={img} width={100} height={100} alt="" />}
       <div className={styles["single-notification"]}>
         <p>{desc}</p>
         <p>{datetime}</p>
